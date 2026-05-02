@@ -14,26 +14,22 @@ export default function Home() {
   }
 
   return (
-    <div className="container">
+    <div>
 
-      {/* MENU */}
-      <div className="sidebar">
-        <h2>Protheus</h2>
-        <div className="menu-item">Dashboard</div>
-        <div className="menu-item">Skills</div>
-        <div className="menu-item">Projetos</div>
+      {/* TOPO */}
+      <div className="header">
+        🚀 Protheus Journey
       </div>
 
-      {/* CONTEÚDO */}
       <div className="main">
 
-        <h1>🚀 Protheus Journey</h1>
-
+        {/* AVATAR + XP */}
         <div className="card">
           <Avatar xp={xp} />
           <h2>XP: {xp}</h2>
         </div>
 
+        {/* SKILLS */}
         <div className="card">
           <h3>Skills</h3>
 
@@ -50,6 +46,7 @@ export default function Home() {
           </button>
         </div>
 
+        {/* SKILLS ADQUIRIDAS */}
         <div className="card">
           <h3>Skills adquiridas</h3>
           <ul>
